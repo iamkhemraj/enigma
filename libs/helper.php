@@ -2,13 +2,20 @@
 
 
 // Enigma theme style script here
+
 function  engima_wp_enqueue_scripts() {
-  wp_enqueue_style( 'main-style', get_template_directory_uri().'/assets/styles/css/app.css' );
-  wp_enqueue_style( 'main-splide-min', get_template_directory_uri().'/assets/styles/css/splide.min.css' );
-  wp_enqueue_script( 'main-script', get_template_directory_uri() . '/js/splide.min.js' );
-  wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/example.js' );
+  wp_enqueue_style('main-style', get_template_directory_uri().'/assets/styles/css/app.css' );
+  wp_enqueue_style('main-splide-min', get_template_directory_uri().'/assets/styles/css/splide.min.css' );
+  wp_enqueue_style('main-all', get_template_directory_uri().'/assets/styles/css/all.css' );
+  wp_enqueue_style('main-bootstrap', get_template_directory_uri().'/assets/styles/css/bootstrap.min.css' );
+  // Start script
+
+  wp_enqueue_script('main-script', get_template_directory_uri() . '/js/splide.min.js' );
+  wp_enqueue_script('main-jquery-min', get_template_directory_uri() . '/js/jquery.min.js' );
+  wp_enqueue_script('main-main', get_template_directory_uri() . '/js/main.js' );
 }
 add_action( 'wp_enqueue_scripts', 'engima_wp_enqueue_scripts' );
+
 
 // Theme custom logo start here 
 function enigma_custom_logo_setup() {
