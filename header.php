@@ -60,12 +60,14 @@ if ( ! defined( 'ABSPATH' ) ) {
                       <!-- Collect the nav links, forms, and other content for toggling -->
                       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right" id="top-nav">
-                          <li><a href="#hero-area">Home</a></li>
-                          <li><a href="#about-us">about us</a></li>
-                          <li><a href="#blog">Blog</a></li>
-                          <li><a href="#price">menu</a></li>
-                          <li><a href="#subscribe">news</a></li>
-                          <li><a href="#contact-us">contacts</a></li>
+                          <!-- Dynamic menu items -->
+                          <?php
+                            $menu_items = wp_get_nav_menu_items('primary_menu');
+                            var_dump($menu_items);
+                            foreach ($menu_items as $item) {
+                              echo '<li><a href="' . esc_url($item->url) . '">' . esc_html($item->title) . '</a></li>';
+                            }
+                          ?>
                         </ul>
                       </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
@@ -78,7 +80,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- Your eCommerce content goes here -->
 
-<?php wp_footer(); ?>
-
-</body>
-</html>
