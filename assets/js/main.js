@@ -1,34 +1,35 @@
-
-  var main = new Splide( '#main-slider', {
-      type       : 'fade',
+  alert('hi');
+  document.addEventListener('DOMContentLoaded', function () {
+    var main = new Splide('#main-slider', {
+      type: 'fade',
       heightRatio: 0.5,
-      pagination : false,
-      arrows     : false,
-      cover      : true,
-    } );
-    
-    var thumbnails = new Splide( '#thumbnail-slider', {
-      rewind          : true,
-      fixedWidth      : 104,
-      fixedHeight     : 58,
-      isNavigation    : true,
-      gap             : 10,
-      focus           : 'center',
-      pagination      : false,
-      cover           : true,
+      pagination: false,
+      arrows: false,
+      cover: true,
+    });
+
+    var thumbnails = new Splide('#thumbnail-slider', {
+      rewind: true,
+      fixedWidth: 104,
+      fixedHeight: 58,
+      isNavigation: true,
+      gap: 10,
+      focus: 'center',
+      pagination: false,
+      cover: true,
       dragMinThreshold: {
         mouse: 4,
         touch: 10,
       },
-      breakpoints : {
+      breakpoints: {
         640: {
-          fixedWidth  : 66,
-          fixedHeight : 38,
+          fixedWidth: 66,
+          fixedHeight: 38,
         },
       },
-    } );
-    
-    main.sync( thumbnails );
+    });
+
+    main.sync(thumbnails);
     main.mount();
     thumbnails.mount();
-
+  });
