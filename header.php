@@ -1,3 +1,4 @@
+
 <?php
 if ( ! defined( 'ABSPATH' ) ) {
   exit; // Terminate script execution
@@ -59,16 +60,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                       <!-- Collect the nav links, forms, and other content for toggling -->
                       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right" id="top-nav">
-                          <!-- Dynamic menu items -->
-                          <?php
-                            $menu_items = wp_get_nav_menu_items('primary_menu');
-                            var_dump($menu_items);
-                            foreach ($menu_items as $item) {
-                              echo '<li><a href="' . esc_url($item->url) . '">' . esc_html($item->title) . '</a></li>';
-                            }
-                          ?>
-                        </ul>
+                      
+                        <?php
+                          wp_nav_menu(array(
+                            'container'  => 'ul',
+                            'menu_class' =>  ' nav navbar-nav navbar-right ',
+                            ));
+                        ?>
                       </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
                   </nav>
@@ -77,6 +75,3 @@ if ( ! defined( 'ABSPATH' ) ) {
       </div><!-- .row close -->
   </div><!-- .container close -->
 </nav><!-- header close -->
-
-<!-- Your eCommerce content goes here -->
-

@@ -1,5 +1,6 @@
 <?php
 
+
 // Enigma theme style script here
 function  engima_wp_enqueue_scripts() {
   wp_enqueue_style( 'main-style', get_template_directory_uri().'/assets/styles/css/app.css' );
@@ -24,14 +25,13 @@ add_action( 'after_setup_theme', 'enigma_custom_logo_setup' );
 // Theme custom logo close.
 
 // Enigma wp theme nav menu.
-if ( ! function_exists( 'enigma_register_nav_menu' ) ) {
-
-	function enigma_register_nav_menu(){
-		register_nav_menus( array(
-	    	'primary_menu' => __( 'Primary Menu', 'text_domain' ),
-	    	'footer_menu'  => __( 'Footer Menu', 'text_domain' ),
-		) );
-	}
-	add_action( 'after_setup_theme', 'enigma_register_nav_menu', 0 );
+function register_my_menus() {
+  register_nav_menus(
+      array(
+		'primary_menu' => __('Primary Menu'),
+		// Add more menu locations if needed
+      )
+  );
 }
+add_action('init', 'register_my_menus');
 ?>

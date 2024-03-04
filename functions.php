@@ -3,6 +3,7 @@
     exit; // Terminate script execution
   }
   require_once 'libs/helper.php';
+  require_once 'assets/classes/waker.php';
   
 
   // add theme support
