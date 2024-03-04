@@ -1,0 +1,24 @@
+body {
+  font-family: system-ui;
+}
+
+.navigation {
+  background-color: #e60023;
+}
+.navigation .navbar-brand {
+  margin-top: -26px;
+  color: #fff;
+}
+.navigation ul#top-nav a {
+  color: #fff;
+  font-size: 16px;
+}
+
+footer {
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=app.css.map */
