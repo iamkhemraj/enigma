@@ -4,7 +4,9 @@
 // Enigma theme style script here
 function  engima_wp_enqueue_scripts() {
   wp_enqueue_style( 'main-style', get_template_directory_uri().'/assets/styles/css/app.css' );
-  wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/example.js', array(), '1.0.0', true );
+  wp_enqueue_style( 'main-splide-min', get_template_directory_uri().'/assets/styles/css/splide.min.css' );
+  wp_enqueue_script( 'main-script', get_template_directory_uri() . '/js/splide.min.js' );
+  wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/example.js' );
 }
 add_action( 'wp_enqueue_scripts', 'engima_wp_enqueue_scripts' );
 
