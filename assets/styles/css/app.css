@@ -24,4 +24,22 @@ footer a {
   color: #fff;
 }
 
+.grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust spacing between small images */
+}
+
+.small-image img {
+  width: 400px;
+  height: 244px;
+  margin-left: -280px;
+}
+
 /*# sourceMappingURL=app.css.map */
