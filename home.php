@@ -17,8 +17,6 @@
             </ul>
         </div>
     </div> 
-
-    
     <!-- Main section close -->
     <section id="collection" class="collection">
         <div class="container">
@@ -36,6 +34,4 @@
 
             </div>
         </div>
-  
-    <!-- Slide section close -->
 <?php get_footer(); ?>
