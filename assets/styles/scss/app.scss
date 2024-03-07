@@ -1,46 +1,9 @@
   body{
     font-family: system-ui;
   }
-  .navigation{
-    background-color: #2ac9c9;
-
-    .navbar-brand {
-      margin-top: -26px;
-      color:#fff;
-    } 
-      ul#top-nav a {
-        color: #fff;
-        font-size: 16px;
-    }
-    a{
-      color: #fff;
+  
+  .nav{
+    div#collapsibleNavbar {
+      margin-inline: 145px;
     }
   }
-  footer{
-    color:#fff;
-    a{
-      color:#fff;
-
-    }
-  }
- 
-   
-    
-.grid {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-.side-images {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Adjust spacing between small images */
-}
-
-.small-image img {
-  width: 400px;
-  height: 244px;
-  margin-left: -280px;
-}
