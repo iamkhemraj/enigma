@@ -3,7 +3,7 @@
     // template Name:home
 ?>
     
-    <!-- Main section start -->
+    <!--  home page slider start -->
     
     <div id="main-slider" class="hmsplide">
         <div class="hmsplide__track">
