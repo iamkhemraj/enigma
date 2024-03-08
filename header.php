@@ -27,7 +27,7 @@ if (!defined('ABSPATH')) {
 
 <body <?php body_class(); ?>>
 
-    <nav class="nav sticky-top">
+    <nav class="nav sticky-top pb-3 pt-3">
         <div class="nav__container container">
             <div class=" nav__row row align-items-center">
                 <div class="nav__content col-md-3">
