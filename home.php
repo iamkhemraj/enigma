@@ -5,7 +5,7 @@
     
     <!--  home page slider start -->
     
-    <div id="main-slider" class="hmsplide">
+    <div id="main-slider" class="hmsplide slider">
         <div class="hmsplide__track">
             <ul class="hmsplide__list">
             <li class="hmsplide__slide__img">
