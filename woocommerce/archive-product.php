@@ -1,8 +1,7 @@
-<?php get_header(); 
+<?php 
 
-
-echo "DSFwsaf";
-?>
-
-
-<?php get_footer(); ?>
+  get_header(); 
+  echo "DSFwsaf";
+  get_footer(); 
+  
+ ?>
