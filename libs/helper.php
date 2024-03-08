@@ -18,6 +18,7 @@ if ( !function_exists('engima_wp_enqueue_scripts') ) {
     wp_enqueue_script('enigma-script-splide', get_template_directory_uri() . '/assets/js/splide.min.js' );
     wp_enqueue_script('enigma-jquery-min', get_template_directory_uri() . '/assets/js/jquery.min.js' );
     wp_enqueue_script('enigma-main', get_template_directory_uri() . '/assets/js/main.js' );
+    wp_enqueue_script('enigma-main-bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js' );
   }
 }
 
