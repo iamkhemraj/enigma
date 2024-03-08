@@ -1,11 +1,12 @@
 <?php
+if (!defined('ABSPATH')) {
+  exit; // Exit if accessed directly
+}
 
-
-
-
+// For hero slider...
 ?>
-<!--  home slider close here -->
-<div id="main-slider" class="hmsplide slider">
+
+<div id="main-slider" class="hero__slider hmsplide ">
    <div class="hmsplide__track">
       <ul class="hmsplide__list">
          <li class="hmsplide__slide__img">
@@ -20,4 +21,3 @@
 		</ul>
 	</div>
 </div>
-<!--  home slider close here -->
