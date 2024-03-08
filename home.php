@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php get_header();
+
+    // template Name:home
+?>
+    
     <!-- Main section start -->
     
     <div id="main-slider" class="splide">

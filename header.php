@@ -30,7 +30,7 @@ if (!defined('ABSPATH')) {
 
 <body <?php body_class(); ?>>
 
-    <nav class="nav sticky-header">
+    <nav class="nav sticky-top">
         <div class="nav__container container">
             <div class=" nav__row row align-items-center">
                 <div class="nav__content col-md-3">
@@ -65,7 +65,7 @@ if (!defined('ABSPATH')) {
                 </div>
                 <div class=" nav__content col-md-3">
                     <!-- Search Input -->
-                    <?php get_search_form(); ?>
+                    <?php get_search_form();?>				
                 </div>
             </div>
         </div>

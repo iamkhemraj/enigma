@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- Footer -->
 <footer
 class="text-center text-lg-start text-white"
-style="background-color: #1c2331"
+style="background-color: #e52865"
 >
 <div class="container">
       <!-- Section: Social media -->
