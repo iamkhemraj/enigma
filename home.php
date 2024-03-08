@@ -5,16 +5,16 @@
     
     <!-- Main section start -->
     
-    <div id="main-slider" class="splide">
-        <div class="splide__track">
-            <ul class="splide__list">
-            <li class="splide__slide">
+    <div id="main-slider" class="hmsplide">
+        <div class="hmsplide__track">
+            <ul class="hmsplide__list">
+            <li class="hmsplide__slide__img">
                 <img src="<?= get_template_directory_uri().'/assets/img/Droogboeketten_kunstboeketten_kunstplanten_bestel_je_bij_Loviy_-_desktop_c36eea96-c825-49af-819e-fde5a1e1b24a_1400x662_crop_center.webp'?>" alt="">
             </li>
-            <li class="splide__slide">
+            <li class="hmsplide__slide__img">
                 <img src="<?= get_template_directory_uri().'/assets/img/VYPERLETE_PRO_1_3740x1266_crop_center.webp'?>" alt="">
             </li>
-            <li class="splide__slide">
+            <li class="hmsplide__slide__img">
                 <img src="<?= get_template_directory_uri().'/assets/img/istockphoto-513247652-1024x1024.jpg'?>" alt="">
             </li>
             <!-- Add more slides here -->
@@ -40,8 +40,5 @@
                </div> 
             </div>
         </div>
-    </section>
-    <section class ="section-three">
-        <img src="" alt="">
     </section>
 <?php get_footer(); ?>
