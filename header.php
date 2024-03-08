@@ -30,7 +30,7 @@
         <nav class="nav sticky-top pb-3 pt-3">
             <div class="nav__container container">
                 <div class=" nav__row row align-items-center">
-                    <div class="nav__content col-md-3">
+                    <div class="nav__content col-md-4">
                         <!-- Logo -->
                         <a class="nav__content__logo" href="<?= site_url('/');?>" style="text-decoration:none;"> <?php
                             $custom_logo_id = get_theme_mod('custom_logo');
@@ -42,7 +42,7 @@
                             }  ?>
                         </a>
                     </div>
-                    <div class=" nav__content  col-md-6">
+                    <div class=" nav__content  col-md-5">
                         <!-- Navigation Menu -->
                         <nav class=" navbar-expand-sm justify-content-center">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
