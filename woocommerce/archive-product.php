@@ -1,7 +1,18 @@
 <?php 
+if( !defined('ABSPATH') ){
+  exit; // Exit if accessce dierectly
+}
 
-  get_header(); 
-  echo "DSFwsaf";
-  get_footer(); 
-  
- ?>
+/**
+ * 
+ * The Template for displaying product archives, including the main shop page which is a post type archive
+ * This template can be overridden by copying it to yourtheme/woocommerce/archive-product.php.
+ *
+ */
+get_header(); 
+
+  echo "Archive page test";
+
+get_footer(); 
+
+?>
