@@ -9,15 +9,15 @@ require 'woocommerce.php';
 if ( !function_exists('engima_wp_enqueue_scripts') ) {
   add_action( 'wp_enqueue_scripts', 'engima_wp_enqueue_scripts' );
   function  engima_wp_enqueue_scripts() {
-    wp_enqueue_style('main-style', get_template_directory_uri().'/assets/styles/css/app.css' );
-    wp_enqueue_style('main-splide-min', get_template_directory_uri().'/assets/styles/css/splide.min.css' );
-    wp_enqueue_style('main-all', get_template_directory_uri().'/assets/styles/css/all.css' );
-    wp_enqueue_style('main-bootstrap', get_template_directory_uri().'/assets/styles/css/bootstrap.min.css' );
+    wp_enqueue_style('enigma-style', get_template_directory_uri().'/assets/styles/css/app.css' );
+    wp_enqueue_style('enigma-splide-min', get_template_directory_uri().'/assets/styles/css/splide.min.css' );
+    wp_enqueue_style('enigma-all', get_template_directory_uri().'/assets/styles/css/all.css' );
+    wp_enqueue_style('enigma-bootstrap', get_template_directory_uri().'/assets/styles/css/bootstrap.min.css' );
     // Start script
 
-    wp_enqueue_script('main-script', get_template_directory_uri() . '/assets/js/splide.min.js' );
-    wp_enqueue_script('main-jquery-min', get_template_directory_uri() . '/assets/js/jquery.min.js' );
-    wp_enqueue_script('main-main', get_template_directory_uri() . '/assets/js/main.js' );
+    wp_enqueue_script('enigma-scrip-splide', get_template_directory_uri() . '/assets/js/splide.min.js' );
+    wp_enqueue_script('enigma-jquery-min', get_template_directory_uri() . '/assets/js/jquery.min.js' );
+    wp_enqueue_script('enigma-main', get_template_directory_uri() . '/assets/js/main.js' );
   }
 }
 
