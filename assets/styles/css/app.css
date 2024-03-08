@@ -2,44 +2,19 @@ body {
   font-family: system-ui;
 }
 
-.navigation {
-  background-color: #2ac9c9;
+.nav__content__logo {
+  color: #000;
+  font-size: 8px;
+  font-family: inherit;
+  font-weight: bold;
 }
-.navigation .navbar-brand {
-  margin-top: -26px;
-  color: #fff;
+.nav__content .menu-item {
+  padding: 15px;
+  max-width: 100%;
 }
-.navigation ul#top-nav a {
-  color: #fff;
-  font-size: 16px;
-}
-.navigation a {
-  color: #fff;
-}
-
-footer {
-  color: #fff;
-}
-footer a {
-  color: #fff;
-}
-
-.grid {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.side-images {
-  display: flex;
-  flex-direction: column;
-  gap: 20px; /* Adjust spacing between small images */
-}
-
-.small-image img {
-  width: 400px;
-  height: 244px;
-  margin-left: -280px;
+.nav__content .menu-item a {
+  color: #001;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,9 +1,26 @@
-  body{
-    font-family: system-ui;
-  }
+body{
+  font-family: system-ui;
+}
+
+.nav__content{
+  &__logo {
   
-  .nav{
-    div#collapsibleNavbar {
-      margin-inline: 145px;
-    }
+    color: #000;
+    font-size: 8px;
+    font-family: inherit;
+    font-weight: bold;
+   
   }
+
+ 
+    .menu-item {
+      
+      padding: 15px;
+      max-width: 100%;
+        a{
+          color: #001;
+          text-decoration: none;
+        }
+    } 
+}
+  
