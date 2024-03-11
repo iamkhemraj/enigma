@@ -26,6 +26,9 @@
             input#s {
                 border-radius: 15px;
             }
+            .nav__content__logo img{
+                width:120px;
+            }
         </style>
     </head>
 
