@@ -65,6 +65,4 @@
         </nav>
         <!-- header close -->
 
-    </body>
-
-    </html>
+  
