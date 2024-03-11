@@ -4,6 +4,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 //Helper file
 require_once 'libs/helper.php';
+// Enigma footer widgets menu.
+require_once 'libs/widgets/footer-widget.php';
 
 // add setup_woocommerce_support
 if(function_exists('setup_woocommerce_support')){
