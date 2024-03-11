@@ -5,6 +5,24 @@ if( !defined('ABSPATH' ) ){
 }
 
 ?>
+<style>
+li.product {
+padding: 22px !important;
+background: #38e1ac7d;
+box-shadow: 1px 1px 3px 0px #ff00001f;
+}
+span.onsale {
+background: #e71d55 !important;
+}
+h2.woocommerce-loop-product__title, span.price {
+color: black;
+}
+
+a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
+background: #e52450e0;
+color: #fff;
+}
+</style>
  <!-- Collection section... -->
 <section id="collection" class="collection">
 	<div class="container">
@@ -13,12 +31,10 @@ if( !defined('ABSPATH' ) ){
 			<div class="container" style="background-color: rgb(255, 255, 255); padding: 16px;">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="product__content">
-							<?php echo do_shortcode('[products limit="6" columns="6"]'); ?>
+						<div class="collection__product__content">
+							<?php echo do_shortcode('[products limit="4" columns="4" orderby=""]'); ?>
 						</div>
-						<div class="product__content">
-							<?php echo do_shortcode('[products limit="6" columns="6"  order="desc"]'); ?>
-						</div>
+						
 					</div>
 				</div>
 			</div> 
