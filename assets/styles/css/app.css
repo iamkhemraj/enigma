@@ -23,7 +23,7 @@ body {
 }
 .collection__product__content .woocommerce ul li.product {
   padding: 22px !important;
-  background: rgba(56, 225, 172, 0.4901960784);
+  background: rgba(199, 233, 13, 0.75) !important;
   box-shadow: 1px 1px 3px 0px rgba(255, 0, 0, 0.1215686275);
 }
 

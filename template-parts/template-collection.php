@@ -6,11 +6,7 @@ if( !defined('ABSPATH' ) ){
 
 ?>
 <style>
-li.product {
-padding: 22px !important;
-background: #38e1ac7d;
-box-shadow: 1px 1px 3px 0px #ff00001f;
-}
+
 span.onsale {
 background: #e71d55 !important;
 }

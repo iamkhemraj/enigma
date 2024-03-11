@@ -12,3 +12,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   main.mount();
 });
+
+$(document).ready(function() {
+  
+  $(window).scroll(function() {
+      if ($(window).scrollTop() > 500) {
+          $('.sticky-header').addClass('sticky');
+      } else {
+          $('.sticky-header').removeClass('sticky');
+      }
+  });
+});

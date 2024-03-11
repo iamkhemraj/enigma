@@ -6,7 +6,7 @@ if (!defined('ABSPATH')) {
 // For hero slider...
 ?>
 
-<div class="splide" id="main-slider">
+<div class="splide" id="main-slider" style="position:relative; top : -86px";>
     <div class="splide__track">
         <ul class="splide__list">
             <li class="hmsplide__slide__img splide__slide" id ="splide__slider" >
