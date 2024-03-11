@@ -2,6 +2,8 @@
     if (!defined('ABSPATH')) {
         exit; // Terminate script execution
     }
+    global $woocommerce;
+    $cart_count = $woocommerce->cart->get_cart_contents_count(); 
     ?>
     <!DOCTYPE html>
     <html <?php language_attributes(); ?>>
@@ -46,7 +48,17 @@
                 background-color: #ffffff; /* Change to white when sticky */
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
             }
-
+            .total_product_count {
+                position: absolute;
+                background: #e52450e0;
+                color: #fff;
+                padding: 0px 5px 0px 5px;
+                border-radius: 50%;
+                /* height: 28px; */
+                font-size: 12px;
+                top: 19px;
+                right: 172px;
+            }
         </style>
     </head>
 
@@ -84,9 +96,10 @@
                     <div class=" nav__content col-md-2">
                         <!-- Search Input -->
                         <span class="nav__content__magnify">
-                        <img src="<?= get_template_directory_uri().'/assets/img/hero/svg/magnify.svg'?>" alt="">
-                        <img src="<?= get_template_directory_uri().'/assets/img/hero/svg/profile.svg'?>" alt="">
-                      
+                            <img src="<?= get_template_directory_uri().'/assets/img/hero/svg/magnify.svg'?>" alt="">
+                            <img src="<?= get_template_directory_uri().'/assets/img/hero/svg/profile.svg'?>" alt="">
+                            <img src="<?= get_template_directory_uri().'/assets/img/hero/svg/cart.svg'?>"   alt="" style="position:relative">
+                            <span class="total_product_count"  style="position:absolute"><?= !empty($cart_count) ? $cart_count:''; ?></span>
                         </span>
                         <?php //get_search_form();?>				
                     </div>
