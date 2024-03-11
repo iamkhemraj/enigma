@@ -29,12 +29,30 @@
             .nav__content__logo img{
                 width:120px;
             }
+            span.nav__content__magnify img {
+                width: 19px;
+                margin-left:12px ;
+            }
+            .sticky-header {
+                position: fixed;
+                width: 100%;
+                top: 0;
+                background-color: transparent; /* Initially transparent */
+                transition: background-color 0.3s ease; /* Smooth transition effect */
+                z-index: 1000; /* Ensure it's above other content */
+            }
+
+            .sticky-header.sticky {
+                background-color: #ffffff; /* Change to white when sticky */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+            }
+
         </style>
     </head>
 
     <body <?php body_class(); ?>>
 
-        <nav class="nav sticky-top pb-3 pt-3">
+        <nav class="nav sticky-top pb-3 pt-3 sticky-header " style="position:relative;">
             <div class="nav__container container">
                 <div class=" nav__row row align-items-center">
                     <div class="nav__content col-md-4">
@@ -49,7 +67,7 @@
                             }  ?>
                         </a>
                     </div>
-                    <div class=" nav__content  col-md-5">
+                    <div class=" nav__content  col-md-6">
                         <!-- Navigation Menu -->
                         <nav class=" navbar-expand-sm justify-content-center">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -63,9 +81,14 @@
                             </div>
                         </nav>
                     </div>
-                    <div class=" nav__content col-md-3">
+                    <div class=" nav__content col-md-2">
                         <!-- Search Input -->
-                        <?php get_search_form();?>				
+                        <span class="nav__content__magnify">
+                        <img src="<?= get_template_directory_uri().'/assets/img/hero/svg/magnify.svg'?>" alt="">
+                        <img src="<?= get_template_directory_uri().'/assets/img/hero/svg/profile.svg'?>" alt="">
+                      
+                        </span>
+                        <?php //get_search_form();?>				
                     </div>
                 </div>
             </div>
