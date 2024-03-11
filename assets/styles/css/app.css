@@ -2,8 +2,11 @@ body {
   font-family: system-ui;
 }
 
+.nav {
+  background: #e52865;
+}
 .nav__content__logo {
-  color: #fff;
+  color: #000;
   font-size: 8px;
   font-family: inherit;
   font-weight: bold;
