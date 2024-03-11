@@ -50,4 +50,4 @@ if ( !function_exists('enigma_custom_logo_setup')) {
     );
   }
 }
-?>
+// Enigma footer widgets menu.
