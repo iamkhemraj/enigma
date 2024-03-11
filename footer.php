@@ -33,7 +33,9 @@ $social_icon = !empty(get_field('social_icon',$post_ID)) ?  get_field('social_ic
          } ?>
       </section> 
       <?php
-         // footer widget content
+         /**
+          *  footer widget content call form libs / widgets / footer widget.
+          */ 
          $footer_widget = new  Footer_Widget();
          $footer_widget->widget('before_widget' , 'after_widget');
       ?>
