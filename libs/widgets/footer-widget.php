@@ -1,18 +1,18 @@
 <?php
 
   // Step 1: Register a widget area
-function theme_register_footer_widget() {
-  register_sidebar( array(
-      'name'          => __( 'Footer Widget Area', 'theme-text-domain' ),
-      'id'            => 'footer-widget-area',
-      'description'   => __( 'Add widgets here to appear in the footer.', 'theme-text-domain' ),
-      'before_widget' => '<div id="%1$s" class="widget %2$s">',
-      'after_widget'  => '</div>',
-      'before_title'  => '<h2 class="widget-title">',
-      'after_title'   => '</h2>',
-  ) );
+function enigma_register_footer_widget() {
+add_action( 'widgets_init', 'enigma_register_footer_widget' );
+    register_sidebar( array(
+        'name'          => __( 'Footer Widget Area', 'theme-text-domain' ),
+        'id'            => 'footer-widget-area',
+        'description'   => __( 'Add widgets here to appear in the footer.', 'theme-text-domain' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ));
 }
-add_action( 'widgets_init', 'theme_register_footer_widget' );
 
 // Step 2: Create a custom widget class
 class Footer_Widget extends WP_Widget {
@@ -26,7 +26,7 @@ class Footer_Widget extends WP_Widget {
 
   // Step 3: Output HTML structure inside the widget's widget() method
   public function widget( $args, $instance ) {
-      echo $args['before_widget'];
+     
       ?>
       <section>
           <div class="container text-center text-md-start mt-5">
@@ -64,7 +64,7 @@ class Footer_Widget extends WP_Widget {
           </div>
       </section>
       <?php
-      echo $args['after_widget'];
+   
   }
 }
 // Register the widget
@@ -74,5 +74,5 @@ function register_footer_widget() {
 add_action( 'widgets_init', 'register_footer_widget' );
 
 
-
+$Footer_Widget = new Footer_Widget();
 ?>
