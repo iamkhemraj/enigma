@@ -22,7 +22,11 @@
             ?>
         </title>
         <?php wp_head(); ?>
-
+        <style>
+            input#s {
+                border-radius: 15px;
+            }
+        </style>
     </head>
 
     <body <?php body_class(); ?>>
