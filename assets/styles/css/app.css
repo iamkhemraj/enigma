@@ -24,10 +24,13 @@ body {
   background: rgba(220, 220, 220, 0.3607843137);
   padding: 18px;
 }
+.collection__product__content .woocommerce ul li.product:hover {
+  transform: 1s;
+  height: 391px;
+  box-shadow: -1px 1px 3px 1px rgba(255, 0, 0, 0.1215686275);
+}
 .collection__product__content .woocommerce ul li.product {
-  padding: 22px !important;
-  background: rgba(199, 233, 13, 0.75) !important;
-  box-shadow: 1px 1px 3px 0px rgba(255, 0, 0, 0.1215686275);
+  padding: 10px;
 }
 
 /*# sourceMappingURL=app.css.map */
