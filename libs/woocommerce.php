@@ -7,14 +7,10 @@ add_theme_support( 'wc-product-gallery-slider' );
 
 remove_theme_support( 'wc-product-gallery-slider' );
 
-// Remove default wrapper class
-remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
-remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+// Remove Tabs before related products.
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
 
-// Remove breadcrumb
-remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
-
-// Adding custom woocommerce wrapper
+// Adding custom woocommerce wrapper.
 if ( !function_exists('woocommerce_container_start_class') ) {
   add_action('woocommerce_before_main_content', 'woocommerce_container_start_class', 10);
   function woocommerce_container_start_class() {
@@ -25,7 +21,7 @@ if ( !function_exists('woocommerce_container_start_class') ) {
     ';
   }
 }
-
+// Add custom class for target products.
 if ( !function_exists('woocommerce_container_start_class') ) {
   add_action('woocommerce_after_main_content', 'woocommerce_container_end_class', 10);
   function woocommerce_container_end_class() {
@@ -35,7 +31,7 @@ if ( !function_exists('woocommerce_container_start_class') ) {
     </div>';
   }
 }
-
+// Add theme sport here.
 if ( !function_exists('woocommerce_image_support') ) {
   add_action( 'after_setup_theme', 'woocommerce_image_support', 10 );
   function woocommerce_image_support() {
@@ -63,7 +59,17 @@ if ( !function_exists('woocommerce_image_support') ) {
   } );
 
 }
+// Add zoom effect for single image
+if(!function_exists('enigma_image_effect_setup')){
 
+  add_action( 'after_setup_theme', 'enigma_image_effect_setup' );
+  function enigma_image_effect_setup() {
+    add_theme_support( 'wc-product-gallery-zoom' );
+    add_theme_support( 'wc-product-gallery-lightbox' );
+    add_theme_support( 'wc-product-gallery-slider' );
+  }
+
+}
 
 
 	
