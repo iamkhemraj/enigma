@@ -38,7 +38,7 @@
                 position: fixed;
                 width: 100%;
                 top: 0;
-                background-color: transparent; /* Initially transparent */
+                background-color: #e5286512; /* Initially transparent */
                 transition: background-color 0.3s ease; /* Smooth transition effect */
                 z-index: 1000; /* Ensure it's above other content */
             }
