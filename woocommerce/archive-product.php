@@ -11,14 +11,16 @@ get_header( 'shop' );
 //  do_action( 'woocommerce_before_main_content' ); ?>
 
 
-<div class="container">
+<div class="container pt-5">
 	<div class="row">
-        <div class="col-lg-3">  <?php
-		echo "side filteres";
-            ?>
+        <div class="col-lg-3 "> 
+			<div class="filter__siderbar"> <?php
+				dynamic_sidebar( 'Main Sidebar' ); ?>
+			</div> 
         </div>
         <div class="col-lg-9">
-            <div class="woocommerce-products-header">
+			<div class="shop__content">
+			<div class="woocommerce-products-header">
                 <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
                     <h3 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h3>
                 <?php endif; ?>
@@ -41,6 +43,8 @@ get_header( 'shop' );
                 do_action( 'woocommerce_no_products_found' );
             }
             ?>
+			</div>
+            
         </div>
     </div>
 </div> <?php
