@@ -11,12 +11,12 @@ $social_icon = !empty(get_field('social_icon',$post_ID)) ?  get_field('social_ic
 // Footer start here..
 ?>
 
-<footer class="text-center text-lg-start text-white" style="background-color: #e52865" >
+<footer class="text-center text-lg-start text-white" style="background-color: #071c22" >
    <div class="container">
-      <section class="d-flex justify-content-between p-4" style="background-color: #ebe412fa" > <?php
+      <section class="d-flex justify-content-between p-4" style="background-color: #e52450e0" > <?php
          if(!empty($text_dark)){ ?>
             <div class="me-5">
-               <span class="text-dark " style='color:#000;'><?= !empty($text_dark) ? $text_dark : 'Get connected' ; ?></span>
+               <span class="text-white " style='color:#fff;'><?= !empty($text_dark) ? $text_dark : 'Get connected' ; ?></span>
             </div> <?php
          }
         
