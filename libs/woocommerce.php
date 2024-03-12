@@ -41,7 +41,7 @@ if ( !function_exists('woocommerce_image_support') ) {
   function woocommerce_image_support() {
     add_theme_support( 'woocommerce', array(
         'woocommerce_gallery_thumbnail' => 3,
-        'single_image_width'    => 10,
+        'single_image_width'    => 1450,
 
         'product_grid'          => array(
             'default_rows'    => 3,
