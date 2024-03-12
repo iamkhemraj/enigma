@@ -13,13 +13,11 @@ $social_icon = !empty(get_field('social_icon',$post_ID)) ?  get_field('social_ic
 
 <footer class="text-center text-lg-start text-white" style="background-color: #071c22" >
    <div class="container">
-      <section class="d-flex justify-content-between p-4" style="background-color: #e52450e0" > <?php
-         if(!empty($text_dark)){ ?>
-            <div class="me-5">
-               <span class="text-white " style='color:#fff;'><?= !empty($text_dark) ? $text_dark : 'Get connected' ; ?></span>
-            </div> <?php
-         }
-        
+      <section class="d-flex justify-content-between p-4" style="background-color: #e52450e0" > 
+         <div class="me-5">
+            <span class="text-white " style='color:#fff;'><?= !empty($text_dark) ? $text_dark : 'Get connected' ; ?></span>
+         </div> <?php
+         
          if(isset($social_icon) && !empty($social_icon)){ ?>
             <div class = "social_icon"> <?php
                foreach( $social_icon as $icon_names){
