@@ -5,10 +5,13 @@
   &__product__content {
     .woocommerce {
       ul {
+        li.product:hover {
+          transform: 1s;
+          height: 391px;
+          box-shadow: -1px 1px 3px 1px rgba(255, 0, 0, 0.1215686275);
+        }
         li.product {
-          padding: 22px !important;
-          background:rgb(199 233 13 / 75%) !important;
-          box-shadow: 1px 1px 3px 0px #ff00001f;
+         padding: 10px;
         }
       }
     }
